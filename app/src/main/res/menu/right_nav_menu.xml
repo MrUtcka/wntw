@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/Home_nav"
+            android:title="Проекты" />
+        <item
+            android:id="@+id/Create_nav"
+            android:title="Создать проект" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/Profile_nav"
+            android:title="Профиль" />
+        <item
+            android:id="@+id/Login_nav"
+            android:title="Выйти" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/Setting_nav"
+            android:title="Настройки" />
+    </group>
+</menu>

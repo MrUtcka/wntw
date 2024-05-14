@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/save_Task_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/taskName_editText_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/taskDescription_editText_new"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Description"
+        app:layout_constraintTop_toBottomOf="@+id/taskName_editText_new" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescription_editText_new">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/ez_serious_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Не важно" />
+
+            <RadioButton
+                android:id="@+id/normal_serious_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Важно" />
+
+            <RadioButton
+                android:id="@+id/hard_serious_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Очень важно" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_new">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/do_category_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нужно сделать" />
+
+            <RadioButton
+                android:id="@+id/doing_category_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В работе" />
+
+            <RadioButton
+                android:id="@+id/done_category_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сделано" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

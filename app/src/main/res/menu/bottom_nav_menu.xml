@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Задачи"
+        android:icon="@drawable/baseline_add_home_work"
+        android:id="@+id/task_nav"/>
+    <item android:title="Расписание"
+        android:icon="@drawable/baseline_person"
+        android:id="@+id/schedule_nav"/>
+    <item android:title="Другое"
+        android:icon="@drawable/baseline_app_settings"
+        android:id="@+id/other_nav"/>
+</menu>
